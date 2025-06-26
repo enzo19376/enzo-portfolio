@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo">Enzo's Portfolio</div>
+    <nav id="nav" role="navigation" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="navToggle">☰</button>
+
+    <button id="themeToggle">🌙</button>
+
+  </header>
+
+  <section class="hero">
+    <img src="profile.jpg" alt="My Photo" class="profile-img" />
+    <h1>Hi, I'm <span class="typed-text"></span><span class="cursor">|</span></h1>
+    <p>Aspiring Web Developer</p>
+  </section>
+
+  <section id="about" class="animate">
+    <h2>About Me</h2>
+    <p>I'm a beginner so my coding skills are poor.</p>
+  </section>
+
+  <section id="projects" class="animate">
+  <h2>My Projects</h2>
+  <div class="project-list">
+    <div class="project-card">
+      <h3>Project 1</h3>
+      <p>Short description of the project.</p>
+    </div>
+  </div>
+</section>
+
+
+  <section id="contact" class="animate">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
